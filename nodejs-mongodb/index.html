@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trees</title>    
+</head>
+<body>
+    <h1>Input Tree</h1>
+    <form method="post" action="/post">
+        <p>Name:</p>
+        <input type="text" name="Name" placeholder="Name" > <br>
+        <p>Latitude:</p>
+        <input type="text" name="Latitude" placeholder="33.865649"> <br>
+        <p>Longitude:</p>
+        <input type="text" name="Longitude" placeholder="25.347422"> <br>      
+        <p>Tree Height:</p>        
+        <input type="text" name="TreeHeight" placeholder="6.20"> <br>      
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h1>Show All Data</h1>
+    <a href="/api/data">Show All Data</a>
+    <br><br>
+    <h1>Show Filter Data</h1>
+    <form method="post" action="/api/greaterdata">
+        <p>Greater Then</p>
+        <input type="text" name="FilterHeight" placeholder="25.62124">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <form method="post" action="/api/lowerdata">
+        <p>Lower Then</p>
+        <input type="text" name="FilterHeight" placeholder="62.72124">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
